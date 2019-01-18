@@ -1,4 +1,3 @@
-
 #[derive(Debug, PartialEq, Eq)]
 pub struct TreeNode {
     pub val: i32,

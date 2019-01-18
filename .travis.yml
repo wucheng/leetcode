@@ -1,0 +1,18 @@
+language: rust
+os:
+  - linux
+  - osx
+# Run builds for all the supported trains
+rust:
+  - nightly
+  - beta
+  - stable
+# This will runs your tests against all three channels, but any breakage in nightly will not fail the rest of build
+matrix:
+  allow_failures:
+    - rust: nightly
+  fast_finish: true
+# The main build
+script:
+  - cargo build --verbose --all
+  - cargo test --verbose --all
