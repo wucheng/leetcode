@@ -84,7 +84,7 @@ mod tests {
             right: None
         })));
 
-        let result = Solution::merge_trees(a, None);
+        let result = Solution::merge_trees(None, a);
         assert_eq!(result.is_some(), true);
         assert_eq!(Rc::strong_count(result.as_ref().unwrap()), 1);
         assert_eq!(Rc::weak_count(result.as_ref().unwrap()), 0);
