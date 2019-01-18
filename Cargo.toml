@@ -12,3 +12,4 @@ name = "main"
 
 
 [dependencies]
+rand = "^0.6"
