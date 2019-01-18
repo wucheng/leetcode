@@ -1,4 +1,4 @@
-# LeetCode-Rust [build status](https://img.shields.io/travis/wucheng/leetcode-rust.svg?style=popout) [cover]
+# LeetCode-Rust ![build status](https://img.shields.io/travis/wucheng/leetcode-rust.svg?style=popout)
 通过练习LeetCode, 来熟悉Rust语言. 
 
 
