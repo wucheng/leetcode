@@ -1,20 +1,4 @@
-#[derive(Debug, PartialEq, Eq)]
-pub struct TreeNode {
-    pub val: i32,
-    pub left: Option<Rc<RefCell<TreeNode>>>,
-    pub right: Option<Rc<RefCell<TreeNode>>>,
-}
-
-impl TreeNode {
-    #[inline]
-    pub fn new(val: i32) -> Self {
-        TreeNode {
-            val,
-            left: None,
-            right: None
-        }
-    }
-}
+use crate::leetcode_data_struct::data_struct::TreeNode;
 
 use std::rc::Rc;
 use std::cell::RefCell;
@@ -45,7 +29,7 @@ impl Solution {
 #[cfg(test)]
 mod tests {
     use super::Solution;
-    use super::TreeNode;
+    use crate::leetcode_data_struct::data_struct::TreeNode;
     use std::rc::Rc;
     use std::cell::RefCell;
 
